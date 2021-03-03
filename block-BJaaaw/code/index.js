@@ -15,6 +15,12 @@ switch(true){
     console.log("number is odd");
     break;
 }
+let number = Number(prompt("Enter a number"));
+if(number%2==0){
+  console.log("number is even");
+}else{
+  console.log("number is odd");
+}
 // 2. Write a program to accept two numbers from user using`prompt` and alert the max value.
 let num1=Number(prompt("Enter a number"));
 let num2=Number(prompt("Enter a number"));
@@ -111,29 +117,35 @@ switch(month){
 //  if..else vs switch
 let salary = Number(prompt("Enter the salary"));
 if(salary<=20000){
-  var inhandSalary = (salary*(10/100));
-  alert(inhandSalary);
+  var tax = (salary*(10/100));
+  var inhandSalary=salary-tax;
+  console.log(inhandSalary);
 }else if(salary<=40000){
-  var inhandSalary = (salary*(20/100));
-  alert(inhandSalary);
+  var tax = (salary*(20/100));
+  var inhandSalary=salary-tax;
+  console.log(inhandSalary);
 }else if(salary>50000){
-  var inhandSalary = (salary*(30/100));
-  alert(inhandSalary);
+  var tax = (salary*(30/100));
+  var inhandSalary=salary-tax;
+  console.log(inhandSalary);
 }
 
 let salary = Number(prompt("Enter the salary"));
 switch(true){
   case salary<=20000:
-    var inhandSalary = (salary*(10/100));
-    alert(inhandSalary);
+    var tax = (salary*(10/100));
+    var inhandSalary=salary-tax;
+    console.log(inhandSalary);
     break;
   case salary<=40000:
-    var inhandSalary = (salary*(20/100));
-    alert(inhandSalary);
+    var tax = (salary*(20/100));
+    var inhandSalary=salary-tax;
+    console.log(inhandSalary);
     break;
   case salary>50000:
-    var inhandSalary = (salary*(30/100));
-    alert(inhandSalary);
+    var tax = (salary*(30/100));
+    var inhandSalary=salary-tax;
+    console.log(inhandSalary);
     break;
 }
 
