@@ -4,10 +4,29 @@
 
 // Using `console.log` log all the values from 1 to 10.
 
-// Using `console.log` log all the evan values from 1 to 10.
+for(var i=1;i<11;i++){
+    console.log(i);
+}
 
-// Using `console.log` log all the od values from 1 to 10.
+// Using `console.log` log all the even values from 1 to 10.
+for(var i=1;i<11;i++){
+    if(i%2==0) console.log(i);
+}
 
+// Using `console.log` log all the odd values from 1 to 10.
+
+for(var i=1;i<11;i++){
+    if(i%2!=0) console.log(i);
+}
 // Calculate the sum of all numbers from 1 to 10.
+var sum=0;
+for(var i=1;i<11;i++){
+    sum+=i
+}
 
 // Log all the values from 1 to 10 using while loop
+var i=1;
+while(i<11){
+    console.log(i)
+    i++
+}
